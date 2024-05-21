@@ -1,0 +1,2 @@
+utility
+default text color = "#3a1212"
