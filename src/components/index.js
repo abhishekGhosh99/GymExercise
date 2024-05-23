@@ -8,6 +8,10 @@ import Exercises from "./Exercises";
 import HorizontalScrollbar from "./HorizontalScrollbar";
 import BodyPart from "./BodyPart";
 import ExerciseCard from "./ExerciseCard";
+import Detail from "./Detail";
+import ExerciseVideo from "./ExerciseVideo";
+import SimilarExercises from "./SimilarExercises";
+import Loader from "./Loader";
 
 export {
   Navbar,
@@ -20,4 +24,8 @@ export {
   HorizontalScrollbar,
   BodyPart,
   ExerciseCard,
+  Detail,
+  ExerciseVideo,
+  SimilarExercises,
+  Loader,
 };

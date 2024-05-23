@@ -44,10 +44,10 @@ body {
   justify-content: center;
   align-items: center;
   color: #ff2625;
-  font-size: 25px;
+  /* font-size: 25px; */
   border-radius: 4px;
   position: absolute;
-  bottom: -20px;
+  bottom: -50px;
   right: 80px;
   transform: scale(1, 1);
   transition: 0.3s all ease-in-out;
@@ -69,8 +69,8 @@ body {
 }
 
 .detail-image {
-  width: 729px;
-  height: 742px;
+  width: 529px;
+  height: 542px;
 }
 
 .hero-banner-img {
@@ -126,7 +126,8 @@ body {
   flex-direction: column;
   gap: 24px;
   width: 387px;
-  height: 381px;
+  height: auto;
+  margin-bottom: 50px;
   text-decoration: none;
 }
 

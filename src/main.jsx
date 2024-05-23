@@ -1,3 +1,4 @@
+import "../global-shim.js";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
@@ -13,9 +14,9 @@ import { Home, ExerciseDetail } from "./components";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route path="" element={<Home />} />
-      <Route path="exercise/" element={<ExerciseDetail />}>
-        <Route path=":id" element={<ExerciseDetail />} />
+      <Route index element={<Home />} />
+      <Route path="exercise/:id" element={<ExerciseDetail />}>
+        {/* <Route path=":id" element={<ExerciseDetail />} /> */}
       </Route>
       <Route />
     </Route>

@@ -7,7 +7,9 @@ import { ExerciseCard } from "./index";
 
 const Exercises = ({ bodyPart, exercises, setExercises }) => {
   const [currentPage, setCurrentPage] = useState(1);
+
   const exercisesPerPage = 12;
+
   const indexOfLastExercise = currentPage * exercisesPerPage;
   const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
   const currentExercises = exercises.slice(
@@ -23,7 +25,7 @@ const Exercises = ({ bodyPart, exercises, setExercises }) => {
   useEffect(() => {
     const fetchExercisesData = async () => {
       let exercisesData = [];
-      if ((bodyPart = "all")) {
+      if (bodyPart === "all") {
         exercisesData = await fetchData(
           "https://exercisedb.p.rapidapi.com/exercises",
           exerciseOptions
@@ -57,13 +59,14 @@ const Exercises = ({ bodyPart, exercises, setExercises }) => {
       <Stack mt="100px" alignItems="center">
         {exercises.length > 1 && (
           <Pagination
+            className="pagination"
             sx={{
               "& .MuiPaginationItem-root": {
                 color: "white",
               },
               "& .Mui-selected": {
-                backgroundColor: "error.light",
-                color: "white",
+                backgroundColor: "error.main",
+                color: "error.main",
               },
               "& .MuiPaginationItem-root:hover": {
                 backgroundColor: "error.light",
