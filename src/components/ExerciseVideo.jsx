@@ -6,7 +6,7 @@ const ExerciseVideo = ({ exerciseVideos, name }) => {
   if (!exerciseVideos.length) return <Loader />;
 
   return (
-    <Box sx={{ marginTop: { lg: "120px", xs: "20px" } }} textAlign="center">
+    <Box sx={{ marginTop: { lg: "120px", xs: "100px" } }} textAlign="center">
       <Typography variant="h4" mb="60px" textTransform="capitalize">
         Watch{" "}
         <span style={{ color: "#ff2625", fontWeight: "700" }}>{name}</span>{" "}
@@ -17,6 +17,7 @@ const ExerciseVideo = ({ exerciseVideos, name }) => {
         className="exercise-video-card"
         width="100vw"
         justifyContent="center"
+        alignItems="center"
         flexWrap="wrap"
         sx={{
           flexDirection: { lg: "row" },
@@ -42,7 +43,7 @@ const ExerciseVideo = ({ exerciseVideos, name }) => {
               <img
                 style={{
                   borderRadius: "20px",
-                  width: "350px",
+                  width: "300px",
                 }}
                 src={item.video.thumbnails[0].url}
                 alt={item.video.title}

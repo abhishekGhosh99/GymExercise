@@ -28,9 +28,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
-
-// api exhausted change the api with the new ones
-// change the api in fetchData.js file
-// and check the website, does it working on localhost or not and if working then check in gh-pages
-// if using new api and still doesn't work then change the base url of vite.config.js and main.jsx
-// otherwise deploy the project on netlify

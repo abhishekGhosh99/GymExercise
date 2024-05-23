@@ -18,8 +18,26 @@ const Footer = () => {
       <Stack alignItems="center" px="40px" pb="24px">
         <img src={Logo} alt="logo" width="200px" height="200px" />
       </Stack>
-      <Stack direction="row" width="100%" gap="30px">
-        <Typography width="33.33%" px="50px">
+
+      <Stack
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: { lg: "row", xs: "column" },
+          width: "100%",
+          gap: "30px",
+          textAlign: { lg: "center", xs: "start" },
+        }}
+      >
+        <Typography
+          sx={{
+            width: { lg: "33.33%", xs: "100%" },
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+          px="50px"
+        >
           <Typography variant="h5" pb="40px">
             Categories
           </Typography>
@@ -37,7 +55,7 @@ const Footer = () => {
           </Typography>
         </Typography>
 
-        <Typography width="33.33%" px="50px">
+        <Typography sx={{ width: { lg: "33.33%", xs: "100%" } }} px="50px">
           <Typography variant="h5" pb="40px">
             Contact Us
           </Typography>
@@ -55,7 +73,7 @@ const Footer = () => {
           </Typography>
         </Typography>
 
-        <Typography width="33.33%" px="50px">
+        <Typography sx={{ width: { lg: "33.33%", xs: "100%" } }} px="50px">
           <Typography variant="h5" pb="40px">
             Links
           </Typography>

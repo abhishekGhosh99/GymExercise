@@ -164,4 +164,7 @@ body {
   .exercise-card {
     width: 280px;
   }
+  .exercise-video {
+    height: 320px;
+  }
 }

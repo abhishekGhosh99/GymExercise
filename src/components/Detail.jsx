@@ -17,8 +17,12 @@ const Detail = ({ exerciseDetail }) => {
   return (
     <Stack
       gap="100px"
-      sx={{ flexDirection: { lg: "row" }, p: "20px", alignItems: "center" }}
-      mx="50px"
+      sx={{
+        flexDirection: { lg: "row" },
+        p: "20px",
+        alignItems: "center",
+        mx: { lg: "50px", xs: "20px" },
+      }}
     >
       <img src={gifUrl} alt="name" loading="lazy" className="detail-image" />
       <Stack sx={{ gap: { lg: "35px", xs: "20px" } }}>
