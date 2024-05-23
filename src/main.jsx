@@ -13,7 +13,7 @@ import { Home, ExerciseDetail } from "./components";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<App />}>
+    <Route path="/GymExercise" element={<App />}>
       <Route index element={<Home />} />
       <Route path="exercise/:id" element={<ExerciseDetail />}>
         {/* <Route path=":id" element={<ExerciseDetail />} /> */}
